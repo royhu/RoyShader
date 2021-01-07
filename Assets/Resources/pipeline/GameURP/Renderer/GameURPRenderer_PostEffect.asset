@@ -55,6 +55,24 @@ MonoBehaviour:
     Radius: {x: 0, y: 0}
     Intensity: 1
     Iteration: 2
+--- !u!114 &-4247723431703982208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ccb0c07e0b74b15bc3b502ab33d052, type: 3}
+  m_Name: KawaseBlur
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_PassEvent: 500
+  m_Shader: {fileID: 4800000, guid: 7d8d4924b7eae47ea8a72c924ec26dd5, type: 3}
+  m_DownScale: 2
+  m_Setting:
+    Iteration: 4
 --- !u!114 &-1613516043832922617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,15 +126,8 @@ MonoBehaviour:
   m_Name: GameURPRenderer_PostEffect
   m_EditorClassIdentifier: 
   m_RendererFeatures:
-  - {fileID: 5354812889911779662}
-  - {fileID: -1613516043832922617}
-  - {fileID: -1509623229338290915}
-  - {fileID: 7540973731436174469}
-  - {fileID: -8171598284776911080}
-  - {fileID: -5268795137035092297}
-  - {fileID: 7112109266240335557}
-  - {fileID: -5633807341336666627}
-  m_RendererFeatureMap: 4ee1dfcdf31d504a07eef1f7b4a39be91df59cd6abbd0ceb851cceaaa7eba668184faeaca7a6988eb7beb7f6bc7ae1b6c5ee0432b249b362fddda37e12b2d0b1
+  - {fileID: -4247723431703982208}
+  m_RendererFeatureMap: 804f2e550b0e0dc5
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   shaders:
     blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
